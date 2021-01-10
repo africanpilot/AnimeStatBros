@@ -1,0 +1,17 @@
+1) Navigation Components
+    -Home Dashboard
+    -Dashboards/views/ Setup with inital default view but user can change content that is on it
+    -Stats page- all prenpm built charts and graphs wil be displayed here
+        -Anime analysis
+        -seasonal analysis
+            -single season analysis
+            -comparative analysis
+            -genera pie chart
+            -studio pie chart
+            -time series chart of seasons compared to each other
+                -rating
+                -engagement
+        -Hype analysis
+    -Industry news: put news here for daily feed
+        -include Industry reports (https://aja.gr.jp/english/japan-anime-data)
+    -Discussion Board page

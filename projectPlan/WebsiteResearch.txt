@@ -1,0 +1,71 @@
+Questions website needs to answer:
+
+1) How does each anime season compare?
+    -perform time seris analysis on trends of each category for the season
+        -what genres are most popular over each season?
+        -which studios had the most outputs per season?
+        -time sereis on the same chart
+    -segment time seris timeline to show where each season start and ends
+    -summarize the sucess of the season. was it better than the last season?
+    
+2) How much engagement is there for each anime title?
+    -when does engagement start to decrease?
+    -what type of comments are users saying about each anime title?
+        -maybe in the form of word clould or some text analysis here
+    -Are the over all comments positive or negative per anime title?
+    -how quickly do you lose ranking and engamnet?
+        -%change and negative trends
+    -what shows sustain engagement the best and why?
+    
+3) where is the current hype of the anime community?
+    -aniticipated upcoming anime
+    -an aired episode
+    -anime movie?
+
+4) What is the predidcted sucsess of an anime title schedualed for next season
+    -based on current discussions, managa, and hype factor
+
+5) New vs continuing shows
+6) summarize industry reports (https://aja.gr.jp/english/japan-anime-data)
+
+
+List of needed API elements:
+
+1) Info on anime title: (mainly from  myanimelist)
+    -started airing
+    -current episode number
+    -total episode expected for the season (running total if continuing season)
+    -genres
+    -studio
+    -intro/outro song
+    -is it subbed/dubbed?
+    -who has it liscensed (use their logos to inidicate)
+    -watching (need %change information)
+    -dropped (need %change information)
+    -ratings (need %change information)
+    -number of comments in total and per episode
+    -top 10 buzz words per title from comments text analysis
+    -sentiment analysis per title (good or bad comments? show percentages)
+    -get dates of each comment for time seris analysis
+2) anime industry stock?
+
+
+How does user engage with the website:
+1) logs in to 
+    -what keeps them coming back?
+        -Comment on each title/episode and engage in discussions
+        -Create custom views and reports
+            -next episodes
+            -cards for %changes
+            -pining other per built dashboards 
+            -Comments feed
+            -can we make this live? how realtime can this be?
+            -can send notifications on thresholds (email/text/(mobile app??))
+        -industry news? 
+
+Membership
+    -hide ads for some premium?    
+
+
+Other info:
+-what is the overall sample of data used   

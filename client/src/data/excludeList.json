@@ -1,0 +1,4 @@
+{
+    "Ratings" : ["date","metric"],
+    "Comments" : ["date","metric"]
+}

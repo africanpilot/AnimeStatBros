@@ -1,0 +1,74 @@
+svg {
+	font: 10px sans-serif;
+  }
+   
+   
+  .axis path,
+  .axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+  }
+  
+  .y.axis path {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+  }
+  
+  .brush .extent {
+	stroke: #fff;
+	fill-opacity: .125;
+	shape-rendering: crispEdges;
+  }
+  
+  .line {
+	fill-opacity: 0.225;
+	stroke-width: 2;
+	stroke-opacity: 1;
+  }
+
+  .area {
+	fill: rgb(108, 141, 168);
+	clip-path: url(#clip);
+  }
+  
+  .zoom {
+	cursor: move;
+	fill: none;
+	pointer-events: all;
+  }
+
+  #chart {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+  }
+
+  .marker.client .marker-bg,
+  .marker.client path {
+	fill: rgba(255, 127, 0, 0.8);
+	stroke: rgba(255, 127, 0, 0.8);
+	stroke-width: 3;
+  }
+  
+  .marker.server .marker-bg,
+  .marker.server path {
+	fill: rgba(0, 153, 51, 0.8);
+	stroke: rgba(0, 153, 51, 0.8);
+	stroke-width: 3;
+  }
+  
+  .marker path {
+	fill: none;
+  }
+  
+  .legend text,
+  .marker text {
+	fill: #fff;
+	font-weight: bold;
+  }
+  
+  .marker text {
+	text-anchor: middle;
+  }

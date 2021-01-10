@@ -1,0 +1,52 @@
+[
+  {
+    "State": "Watching",
+    "2020 Fall Season": 2704659,
+    "2020 Summer Season": 4499890,
+    "2020 Spring Season": 2159981,
+    "2020 Winter Season": 3853788,
+    "2019 Fall Season": 10604510,
+    "2019 Summer Season": 8819342,
+    "2019 Spring Season": 4114496
+  },
+  {
+    "State": "Dropped",
+    "2020 Fall Season": 2027307,
+    "2020 Summer Season": 3277946,
+    "2020 Spring Season": 1420518,
+    "2020 Winter Season": 2454721,
+    "2019 Fall Season": 7017731,
+    "2019 Summer Season": 5656528,
+    "2019 Spring Season": 2472223
+  },
+  {
+    "State": "Completed",
+    "2020 Fall Season": 1208495,
+    "2020 Summer Season": 2141490,
+    "2020 Spring Season": 1058031,
+    "2020 Winter Season": 1999120,
+    "2019 Fall Season": 5355235,
+    "2019 Summer Season": 5120254,
+    "2019 Spring Season": 2607672
+  },
+  {
+    "State": "On Hold",
+    "2020 Fall Season": 1140516,
+    "2020 Summer Season": 1938695,
+    "2020 Spring Season": 925060,
+    "2020 Winter Season": 1607297,
+    "2019 Fall Season": 4782119,
+    "2019 Summer Season": 4746856,
+    "2019 Spring Season": 3187797
+  },
+  {
+    "State": "Plan to Watch",
+    "2020 Fall Season": 894368,
+    "2020 Summer Season": 1558919,
+    "2020 Spring Season": 725973,
+    "2020 Winter Season": 1311479,
+    "2019 Fall Season": 3596343,
+    "2019 Summer Season": 3239173,
+    "2019 Spring Season": 1575308
+  }
+ ]

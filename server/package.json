@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "anime-stat-bros-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,14 +7,12 @@
   "scripts": {
     "start": "nodemon index.js"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Richard Maku",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "mongoose": "^5.11.11",
-    "nodemon": "^2.0.7"
+    "mongoose": "^5.9.29"
   }
 }

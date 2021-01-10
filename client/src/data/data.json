@@ -1,0 +1,10 @@
+[
+    {
+        "include" : ["Rating","%Change"],
+        "exclude" : ["date","metric"]
+    },
+    {
+        "include" : ["Boku no Hero Academia - Rating","Season Average - Rating"],
+        "exclude" : ["date","metric"]
+    }
+]

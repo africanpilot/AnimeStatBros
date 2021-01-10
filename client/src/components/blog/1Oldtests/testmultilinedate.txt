@@ -1,0 +1,181 @@
+import React, { useRef, useEffect } from 'react';
+import * as d3 from 'd3';
+import '../../assets/timeseries4.css';
+// import data from '../../data/climate4.json';
+
+let data = require('../../data/climate4.json');
+
+function TimeseriesChart(){
+    const ref = useRef();
+
+    useEffect(() => {
+        drawChart();
+    }, [data]);
+
+    const drawChart = () => {
+        console.log(data);
+        var margin = {top: 20, right: 20, bottom: 90, left: 50},
+            margin2 = {top: 230, right: 20, bottom: 30, left: 50},
+            width = 800 - margin.left - margin.right,
+            height = 300 - margin.top - margin.bottom,
+            height2 = 300 - margin2.top - margin2.bottom;
+
+        const svg = d3.select(ref.current)
+            .attr("width",width+margin.left+margin.right)
+            .attr("height",height+margin.top+margin.bottom);
+        
+        var parseDate = d3.timeParse("%Y-%m-%d %H:%M:%S");
+        
+        var x = d3.scaleTime().range([0, width]),
+            x2 = d3.scaleTime().range([0, width]),
+            y = d3.scaleLinear().range([height, 0]),
+            y2 = d3.scaleLinear().range([height2, 0]);
+
+        var color = d3.scaleOrdinal().range(d3.schemeCategory10);
+        
+        var xAxis = d3.axisBottom(x),
+            xAxis2 = d3.axisBottom(x2),
+            yAxis = d3.axisLeft(y);
+        
+        var brush = d3.brushX()
+            .extent([[0, 0], [width, height2]])
+            .on("brush end", brushed);
+
+        var zoom = d3.zoom()
+            .scaleExtent([1, Infinity])
+            .translateExtent([[0, 0], [width, height]])
+            .extent([[0, 0], [width, height]])
+            .on("zoom", zoomed);
+        
+        var line = d3.line()
+            .defined(function(d) { return !isNaN(d.temperature); })
+            .curve(d3.curveMonotoneX)
+            .x(function(d) { return x(d.date); })
+            .y(function(d) { return y(d.temperature); });
+        
+        var line2 = d3.line()
+            .defined(function(d) { return !isNaN(d.temperature); })
+            .curve(d3.curveMonotoneX)
+            .x(function(d) {return x2(d.date); })
+            .y(function(d) {return y2(d.temperature); });
+        
+
+        svg.append("defs").append("clipPath")
+            .attr("id", "clip")
+            .append("rect")
+            .attr("width", width)
+            .attr("height", height);
+        
+        var focus = svg.append("g")
+        .attr("class", "focus")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+            
+        var context = svg.append("g")
+        .attr("class", "context")
+        .attr("transform", "translate(" + margin2.left + "," + margin2.top + ")");
+        
+            console.log(data);
+            // Set the color domain equal to the three product categories
+            var productCategories = Object.keys(data[0]).filter(function(key) {
+                return key !== "date" && key !== "metric";
+            });
+            color.domain(productCategories);
+ 
+           
+              data.forEach(function(d) {
+                d.date = parseDate(d.date);
+              });
+
+            // Filter the data to only include a single metric
+            var subset = data.filter(function(el) {
+                return el.metric === "Quantity";
+            });
+
+            var sources = productCategories.map(function(category) {
+                return {
+                  name: category,
+                  values: subset.map(function(d) {
+                    return { date: d.date, temperature: +d[category] };
+                  })
+                };
+            });
+           
+           
+              x.domain(d3.extent(subset, function(d) { return d.date; }));
+              y.domain([d3.min(sources, function(c) { return d3.min(c.values, function(v) { return v.temperature; }); }),
+                        d3.max(sources, function(c) { return d3.max(c.values, function(v) { return v.temperature; }); }) ]);
+              x2.domain(x.domain());
+              y2.domain(y.domain());
+              
+              focus.selectAll("g")
+                .data(sources)
+                .enter().append("g")
+                .append("path")
+                .attr("class","line")
+                .attr("d", function(d) { return line(d.values); })
+                .style("stroke", function(d) {return color(d.name);})
+                .attr("clip-path", "url(#clip)");
+              
+              focus.append("g")
+                .attr("class", "x axis")
+                .attr("transform", "translate(0," + height + ")")
+                .call(xAxis);
+           
+              focus.append("g")
+                .attr("class", "y axis")
+                .call(yAxis);
+                  
+              context.selectAll("g")
+                .data(sources)
+                .enter().append("g")
+                .append("path")
+                .attr("class", "line")
+                .attr("d", function(d) { return line2(d.values); })
+                .style("stroke", function(d) {return color(d.name);})
+                .attr("clip-path", "url(#clip)");
+           
+              context.append("g")
+                  .attr("class", "x axis")
+                  .attr("transform", "translate(0," + height2 + ")")
+                  .call(xAxis2);
+           
+              context.append("g")
+                .attr("class", "brush")
+                .call(brush)
+                .call(brush.move, x.range()); 
+                
+            svg.append("rect")
+                .attr("class", "zoom")
+                .attr("width", width)
+                .attr("height", height)
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+                .call(zoom);
+
+          function brushed(event) {
+            if(event.sourceEvent && event.sourceEvent.type === "zoom") return; // ignore brush-by-zoom
+            x.domain([x2.invert(event.selection[0]),x2.invert(event.selection[1])]);
+            focus.selectAll("path.line").attr("d",  function(d) {return line(d.values)});
+            focus.select(".x.axis").call(xAxis);
+            focus.select(".y.axis").call(yAxis);
+          }
+
+          function zoomed(event) {
+
+            if(event.sourceEvent && event.sourceEvent.type === "brush") return; // ignore zoom-by-brush
+            x.domain(event.transform.rescaleX(x2).domain());
+            focus.select("path.line").attr("d", function(d) {return line(d.values)});
+            focus.select(".x.axis").call(xAxis);
+            context.select(".brush").call(brush.move, [x2(event.transform.rescaleX(x2).domain()[0]),x2(event.transform.rescaleX(x2).domain()[1])]);
+        }
+ 
+    }
+
+    return (
+
+            <svg ref={ref}>
+            </svg>
+
+    )
+}
+
+export default TimeseriesChart;

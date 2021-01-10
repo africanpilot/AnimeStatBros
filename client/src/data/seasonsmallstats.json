@@ -1,0 +1,322 @@
+[
+    {
+      "label": "2020 Fall Season",
+      "value": "8.9",
+      "percentage": "80%",
+      "increase": true,
+      "decrease": false,
+      "chartLabels": [null, null, null, null, null, null, null],
+      "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+      "backgroundImage": "https://besthqwallpapers.com/Uploads/12-9-2020/140910/thumb2-kikyo-4k-protagonist-chinese-bellflower-inuyasha.jpg",
+      "datasets": [
+        {
+          "label": "Today",
+          "fill": "start",
+          "borderWidth": 1.5,
+          "backgroundColor": "rgba(0, 184, 216, 0.1)",
+          "borderColor": "rgb(0, 184, 216)",
+          "data": [1, 2, 1, 3, 5, 4, 7]
+        }
+      ]
+    },
+    {
+      "label": "2020 Summer Season",
+      "value": "9.3",
+      "percentage": "70%",
+      "increase": true,
+      "decrease": false,
+      "chartLabels": [null, null, null, null, null, null, null],
+      "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+      "backgroundImage": "https://twinfinite.net/wp-content/uploads/2020/03/spring-anime.jpg",
+      "datasets": [
+        {
+          "label": "Today",
+          "fill": "start",
+          "borderWidth": 1.5,
+          "backgroundColor": "rgba(0, 184, 216, 0.1)",
+          "borderColor": "rgb(0, 184, 216)",
+          "data": [1, 2, 3, 3, 3, 4, 4]
+        }
+      ]
+    },
+    {
+      "label": "2020 Spring Season",
+      "value": "8.7",
+      "percentage": "50%",
+      "increase": false,
+      "decrease": true,
+      "chartLabels": [null, null, null, null, null, null, null],
+      "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+      "backgroundImage": "https://i.ytimg.com/vi/iBF6Fgl7rPU/maxresdefault.jpg",
+      "datasets": [
+        {
+          "label": "Today",
+          "fill": "start",
+          "borderWidth": 1.5,
+          "backgroundColor": "rgba(0, 184, 216, 0.1)",
+          "borderColor": "rgb(0, 184, 216)",
+          "data": [2, 3, 3, 3, 4, 3, 3]
+        }
+      ]
+    },
+    {
+      "label": "2020 Winter Season",
+      "value": "9.7",
+      "percentage": "60%",
+      "increase": false,
+      "decrease": true,
+      "chartLabels": [null, null, null, null, null, null, null],
+      "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+      "backgroundImage": "https://3.bp.blogspot.com/-4yYldT-iuRE/XExwuzwjUjI/AAAAAAAABas/VsHecrOR4WYyvb1fkYoAwkGzFM37JcW3gCKgBGAs/w3840-h2400-c/anime-sunset-autumn-scenery-50-4K.jpg",
+      "datasets": [
+        {
+          "label": "Today",
+          "fill": "start",
+          "borderWidth": 1.5,
+          "backgroundColor": "rgba(0, 184, 216, 0.1)",
+          "borderColor": "rgb(0, 184, 216)",
+          "data": [2, 3, 3, 3, 4, 3, 3]
+        }
+      ]
+    },
+    {
+        "label": "2020 Fall Season",
+        "value": "8.9",
+        "percentage": "80%",
+        "increase": true,
+        "decrease": false,
+        "chartLabels": [null, null, null, null, null, null, null],
+        "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+        "backgroundImage": "https://besthqwallpapers.com/Uploads/12-9-2020/140910/thumb2-kikyo-4k-protagonist-chinese-bellflower-inuyasha.jpg",
+        "datasets": [
+          {
+            "label": "Today",
+            "fill": "start",
+            "borderWidth": 1.5,
+            "backgroundColor": "rgba(0, 184, 216, 0.1)",
+            "borderColor": "rgb(0, 184, 216)",
+            "data": [1, 2, 1, 3, 5, 4, 7]
+          }
+        ]
+      },
+      {
+        "label": "2020 Summer Season",
+        "value": "9.3",
+        "percentage": "70%",
+        "increase": true,
+        "decrease": false,
+        "chartLabels": [null, null, null, null, null, null, null],
+        "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+        "backgroundImage": "https://twinfinite.net/wp-content/uploads/2020/03/spring-anime.jpg",
+        "datasets": [
+          {
+            "label": "Today",
+            "fill": "start",
+            "borderWidth": 1.5,
+            "backgroundColor": "rgba(0, 184, 216, 0.1)",
+            "borderColor": "rgb(0, 184, 216)",
+            "data": [1, 2, 3, 3, 3, 4, 4]
+          }
+        ]
+      },
+      {
+        "label": "2020 Spring Season",
+        "value": "8.7",
+        "percentage": "50%",
+        "increase": false,
+        "decrease": true,
+        "chartLabels": [null, null, null, null, null, null, null],
+        "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+        "backgroundImage": "https://i.ytimg.com/vi/iBF6Fgl7rPU/maxresdefault.jpg",
+        "datasets": [
+          {
+            "label": "Today",
+            "fill": "start",
+            "borderWidth": 1.5,
+            "backgroundColor": "rgba(0, 184, 216, 0.1)",
+            "borderColor": "rgb(0, 184, 216)",
+            "data": [2, 3, 3, 3, 4, 3, 3]
+          }
+        ]
+      },
+      {
+        "label": "2020 Winter Season",
+        "value": "9.7",
+        "percentage": "60%",
+        "increase": false,
+        "decrease": true,
+        "chartLabels": [null, null, null, null, null, null, null],
+        "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+        "backgroundImage": "https://3.bp.blogspot.com/-4yYldT-iuRE/XExwuzwjUjI/AAAAAAAABas/VsHecrOR4WYyvb1fkYoAwkGzFM37JcW3gCKgBGAs/w3840-h2400-c/anime-sunset-autumn-scenery-50-4K.jpg",
+        "datasets": [
+          {
+            "label": "Today",
+            "fill": "start",
+            "borderWidth": 1.5,
+            "backgroundColor": "rgba(0, 184, 216, 0.1)",
+            "borderColor": "rgb(0, 184, 216)",
+            "data": [2, 3, 3, 3, 4, 3, 3]
+          }
+        ]
+      },
+      {
+        "label": "2020 Fall Season",
+        "value": "8.9",
+        "percentage": "80%",
+        "increase": true,
+        "decrease": false,
+        "chartLabels": [null, null, null, null, null, null, null],
+        "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+        "backgroundImage": "https://besthqwallpapers.com/Uploads/12-9-2020/140910/thumb2-kikyo-4k-protagonist-chinese-bellflower-inuyasha.jpg",
+        "datasets": [
+          {
+            "label": "Today",
+            "fill": "start",
+            "borderWidth": 1.5,
+            "backgroundColor": "rgba(0, 184, 216, 0.1)",
+            "borderColor": "rgb(0, 184, 216)",
+            "data": [1, 2, 1, 3, 5, 4, 7]
+          }
+        ]
+      },
+      {
+        "label": "2020 Summer Season",
+        "value": "9.3",
+        "percentage": "70%",
+        "increase": true,
+        "decrease": false,
+        "chartLabels": [null, null, null, null, null, null, null],
+        "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+        "backgroundImage": "https://twinfinite.net/wp-content/uploads/2020/03/spring-anime.jpg",
+        "datasets": [
+          {
+            "label": "Today",
+            "fill": "start",
+            "borderWidth": 1.5,
+            "backgroundColor": "rgba(0, 184, 216, 0.1)",
+            "borderColor": "rgb(0, 184, 216)",
+            "data": [1, 2, 3, 3, 3, 4, 4]
+          }
+        ]
+      },
+      {
+        "label": "2020 Spring Season",
+        "value": "8.7",
+        "percentage": "50%",
+        "increase": false,
+        "decrease": true,
+        "chartLabels": [null, null, null, null, null, null, null],
+        "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+        "backgroundImage": "https://i.ytimg.com/vi/iBF6Fgl7rPU/maxresdefault.jpg",
+        "datasets": [
+          {
+            "label": "Today",
+            "fill": "start",
+            "borderWidth": 1.5,
+            "backgroundColor": "rgba(0, 184, 216, 0.1)",
+            "borderColor": "rgb(0, 184, 216)",
+            "data": [2, 3, 3, 3, 4, 3, 3]
+          }
+        ]
+      },
+      {
+        "label": "2020 Winter Season",
+        "value": "9.7",
+        "percentage": "60%",
+        "increase": false,
+        "decrease": true,
+        "chartLabels": [null, null, null, null, null, null, null],
+        "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+        "backgroundImage": "https://3.bp.blogspot.com/-4yYldT-iuRE/XExwuzwjUjI/AAAAAAAABas/VsHecrOR4WYyvb1fkYoAwkGzFM37JcW3gCKgBGAs/w3840-h2400-c/anime-sunset-autumn-scenery-50-4K.jpg",
+        "datasets": [
+          {
+            "label": "Today",
+            "fill": "start",
+            "borderWidth": 1.5,
+            "backgroundColor": "rgba(0, 184, 216, 0.1)",
+            "borderColor": "rgb(0, 184, 216)",
+            "data": [2, 3, 3, 3, 4, 3, 3]
+          }
+        ]
+      },
+      {
+        "label": "2020 Fall Season",
+        "value": "8.9",
+        "percentage": "80%",
+        "increase": true,
+        "decrease": false,
+        "chartLabels": [null, null, null, null, null, null, null],
+        "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+        "backgroundImage": "https://besthqwallpapers.com/Uploads/12-9-2020/140910/thumb2-kikyo-4k-protagonist-chinese-bellflower-inuyasha.jpg",
+        "datasets": [
+          {
+            "label": "Today",
+            "fill": "start",
+            "borderWidth": 1.5,
+            "backgroundColor": "rgba(0, 184, 216, 0.1)",
+            "borderColor": "rgb(0, 184, 216)",
+            "data": [1, 2, 1, 3, 5, 4, 7]
+          }
+        ]
+      },
+      {
+        "label": "2020 Summer Season",
+        "value": "9.3",
+        "percentage": "70%",
+        "increase": true,
+        "decrease": false,
+        "chartLabels": [null, null, null, null, null, null, null],
+        "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+        "backgroundImage": "https://twinfinite.net/wp-content/uploads/2020/03/spring-anime.jpg",
+        "datasets": [
+          {
+            "label": "Today",
+            "fill": "start",
+            "borderWidth": 1.5,
+            "backgroundColor": "rgba(0, 184, 216, 0.1)",
+            "borderColor": "rgb(0, 184, 216)",
+            "data": [1, 2, 3, 3, 3, 4, 4]
+          }
+        ]
+      },
+      {
+        "label": "2020 Spring Season",
+        "value": "8.7",
+        "percentage": "50%",
+        "increase": false,
+        "decrease": true,
+        "chartLabels": [null, null, null, null, null, null, null],
+        "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+        "backgroundImage": "https://i.ytimg.com/vi/iBF6Fgl7rPU/maxresdefault.jpg",
+        "datasets": [
+          {
+            "label": "Today",
+            "fill": "start",
+            "borderWidth": 1.5,
+            "backgroundColor": "rgba(0, 184, 216, 0.1)",
+            "borderColor": "rgb(0, 184, 216)",
+            "data": [2, 3, 3, 3, 4, 3, 3]
+          }
+        ]
+      },
+      {
+        "label": "2020 Winter Season",
+        "value": "9.7",
+        "percentage": "60%",
+        "increase": false,
+        "decrease": true,
+        "chartLabels": [null, null, null, null, null, null, null],
+        "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+        "backgroundImage": "https://3.bp.blogspot.com/-4yYldT-iuRE/XExwuzwjUjI/AAAAAAAABas/VsHecrOR4WYyvb1fkYoAwkGzFM37JcW3gCKgBGAs/w3840-h2400-c/anime-sunset-autumn-scenery-50-4K.jpg",
+        "datasets": [
+          {
+            "label": "Today",
+            "fill": "start",
+            "borderWidth": 1.5,
+            "backgroundColor": "rgba(0, 184, 216, 0.1)",
+            "borderColor": "rgb(0, 184, 216)",
+            "data": [2, 3, 3, 3, 4, 3, 3]
+          }
+        ]
+      }
+]

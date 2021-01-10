@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "text": "this is my first comment",
+        "user_id": 3,
+        "user_name": "John doe",
+        "post_id": 12,
+        "parent_id": null
+    },
+    {
+        "id": 2,
+        "text": "this is the reply to my first comment",
+        "user_id": 6,
+        "user_name": "John smith",
+        "post_id": 12,
+        "parent_id": 1
+    },
+    {
+        "id": 3,
+        "text": "this is my reply to your reply",
+        "user_id": 3,
+        "user_name": "John doe",
+        "post_id": 12,
+        "parent_id": 2
+    }
+]

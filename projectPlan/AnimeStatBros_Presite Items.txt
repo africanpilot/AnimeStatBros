@@ -1,0 +1,10 @@
+-list of websites for project inspiration
+
+1) https://jikan-me.github.io/jikan-docs/usage/anime/stats/
+2) https://anime-stats.net/
+3) https://anime.plus/s/globals
+4) https://steamspy.com/
+5) https://aja.gr.jp/english/japan-anime-data
+6) https://www.animestat.com/index
+7) https://steamcharts.com/
+8) https://myanimelist.net/

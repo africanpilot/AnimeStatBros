@@ -1,0 +1,322 @@
+[
+    {
+      "label": "Boku no Hero Academia",
+      "value": "8.9",
+      "percentage": "80%",
+      "increase": true,
+      "decrease": false,
+      "chartLabels": [null, null, null, null, null, null, null],
+      "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+      "backgroundImage": "https://freeaddon.com/wallpaper/bokunoheroacademia/thumb444x250-02.jpg",
+      "datasets": [
+        {
+          "label": "Today",
+          "fill": "start",
+          "borderWidth": 1.5,
+          "backgroundColor": "rgba(0, 184, 216, 0.1)",
+          "borderColor": "rgb(0, 184, 216)",
+          "data": [1, 2, 1, 3, 5, 4, 7]
+        }
+      ]
+    },
+    {
+      "label": "Naruto",
+      "value": "9.3",
+      "percentage": "70%",
+      "increase": true,
+      "decrease": false,
+      "chartLabels": [null, null, null, null, null, null, null],
+      "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+      "backgroundImage": "https://www.whats-on-netflix.com/wp-content/uploads/2018/09/naruto-on-netflix.jpg",
+      "datasets": [
+        {
+          "label": "Today",
+          "fill": "start",
+          "borderWidth": 1.5,
+          "backgroundColor": "rgba(0, 184, 216, 0.1)",
+          "borderColor": "rgb(0, 184, 216)",
+          "data": [1, 2, 3, 3, 3, 4, 4]
+        }
+      ]
+    },
+    {
+      "label": "Afro Samuri",
+      "value": "8.7",
+      "percentage": "50%",
+      "increase": false,
+      "decrease": true,
+      "chartLabels": [null, null, null, null, null, null, null],
+      "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+      "backgroundImage": "https://www.syfy.com/sites/syfy/files/styles/1200x680_hero/public/2019/03/afro_samurai_0.jpg",
+      "datasets": [
+        {
+          "label": "Today",
+          "fill": "start",
+          "borderWidth": 1.5,
+          "backgroundColor": "rgba(0, 184, 216, 0.1)",
+          "borderColor": "rgb(0, 184, 216)",
+          "data": [2, 3, 3, 3, 4, 3, 3]
+        }
+      ]
+    },
+    {
+      "label": "One Punch Man",
+      "value": "9.7",
+      "percentage": "60%",
+      "increase": false,
+      "decrease": true,
+      "chartLabels": [null, null, null, null, null, null, null],
+      "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+      "backgroundImage": "https://dw9to29mmj727.cloudfront.net/promo/2016/5256-SeriesHeaders_OPM_2000x800.jpg",
+      "datasets": [
+        {
+          "label": "Today",
+          "fill": "start",
+          "borderWidth": 1.5,
+          "backgroundColor": "rgba(0, 184, 216, 0.1)",
+          "borderColor": "rgb(0, 184, 216)",
+          "data": [2, 3, 3, 3, 4, 3, 3]
+        }
+      ]
+    },
+    {
+      "label": "Boku no Hero Academia",
+      "value": "8.9",
+      "percentage": "80%",
+      "increase": true,
+      "decrease": false,
+      "chartLabels": [null, null, null, null, null, null, null],
+      "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+      "backgroundImage": "https://freeaddon.com/wallpaper/bokunoheroacademia/thumb444x250-02.jpg",
+      "datasets": [
+        {
+          "label": "Today",
+          "fill": "start",
+          "borderWidth": 1.5,
+          "backgroundColor": "rgba(0, 184, 216, 0.1)",
+          "borderColor": "rgb(0, 184, 216)",
+          "data": [1, 2, 1, 3, 5, 4, 7]
+        }
+      ]
+    },
+    {
+      "label": "Naruto",
+      "value": "9.3",
+      "percentage": "70%",
+      "increase": true,
+      "decrease": false,
+      "chartLabels": [null, null, null, null, null, null, null],
+      "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+      "backgroundImage": "https://www.whats-on-netflix.com/wp-content/uploads/2018/09/naruto-on-netflix.jpg",
+      "datasets": [
+        {
+          "label": "Today",
+          "fill": "start",
+          "borderWidth": 1.5,
+          "backgroundColor": "rgba(0, 184, 216, 0.1)",
+          "borderColor": "rgb(0, 184, 216)",
+          "data": [1, 2, 3, 3, 3, 4, 4]
+        }
+      ]
+    },
+    {
+      "label": "Afro Samuri",
+      "value": "8.7",
+      "percentage": "50%",
+      "increase": false,
+      "decrease": true,
+      "chartLabels": [null, null, null, null, null, null, null],
+      "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+      "backgroundImage": "https://www.syfy.com/sites/syfy/files/styles/1200x680_hero/public/2019/03/afro_samurai_0.jpg",
+      "datasets": [
+        {
+          "label": "Today",
+          "fill": "start",
+          "borderWidth": 1.5,
+          "backgroundColor": "rgba(0, 184, 216, 0.1)",
+          "borderColor": "rgb(0, 184, 216)",
+          "data": [2, 3, 3, 3, 4, 3, 3]
+        }
+      ]
+    },
+    {
+      "label": "One Punch Man",
+      "value": "9.7",
+      "percentage": "60%",
+      "increase": false,
+      "decrease": true,
+      "chartLabels": [null, null, null, null, null, null, null],
+      "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+      "backgroundImage": "https://dw9to29mmj727.cloudfront.net/promo/2016/5256-SeriesHeaders_OPM_2000x800.jpg",
+      "datasets": [
+        {
+          "label": "Today",
+          "fill": "start",
+          "borderWidth": 1.5,
+          "backgroundColor": "rgba(0, 184, 216, 0.1)",
+          "borderColor": "rgb(0, 184, 216)",
+          "data": [2, 3, 3, 3, 4, 3, 3]
+        }
+      ]
+    },
+    {
+      "label": "Boku no Hero Academia",
+      "value": "8.9",
+      "percentage": "80%",
+      "increase": true,
+      "decrease": false,
+      "chartLabels": [null, null, null, null, null, null, null],
+      "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+      "backgroundImage": "https://freeaddon.com/wallpaper/bokunoheroacademia/thumb444x250-02.jpg",
+      "datasets": [
+        {
+          "label": "Today",
+          "fill": "start",
+          "borderWidth": 1.5,
+          "backgroundColor": "rgba(0, 184, 216, 0.1)",
+          "borderColor": "rgb(0, 184, 216)",
+          "data": [1, 2, 1, 3, 5, 4, 7]
+        }
+      ]
+    },
+    {
+      "label": "Naruto",
+      "value": "9.3",
+      "percentage": "70%",
+      "increase": true,
+      "decrease": false,
+      "chartLabels": [null, null, null, null, null, null, null],
+      "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+      "backgroundImage": "https://www.whats-on-netflix.com/wp-content/uploads/2018/09/naruto-on-netflix.jpg",
+      "datasets": [
+        {
+          "label": "Today",
+          "fill": "start",
+          "borderWidth": 1.5,
+          "backgroundColor": "rgba(0, 184, 216, 0.1)",
+          "borderColor": "rgb(0, 184, 216)",
+          "data": [1, 2, 3, 3, 3, 4, 4]
+        }
+      ]
+    },
+    {
+      "label": "Afro Samuri",
+      "value": "8.7",
+      "percentage": "50%",
+      "increase": false,
+      "decrease": true,
+      "chartLabels": [null, null, null, null, null, null, null],
+      "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+      "backgroundImage": "https://www.syfy.com/sites/syfy/files/styles/1200x680_hero/public/2019/03/afro_samurai_0.jpg",
+      "datasets": [
+        {
+          "label": "Today",
+          "fill": "start",
+          "borderWidth": 1.5,
+          "backgroundColor": "rgba(0, 184, 216, 0.1)",
+          "borderColor": "rgb(0, 184, 216)",
+          "data": [2, 3, 3, 3, 4, 3, 3]
+        }
+      ]
+    },
+    {
+      "label": "One Punch Man",
+      "value": "9.7",
+      "percentage": "60%",
+      "increase": false,
+      "decrease": true,
+      "chartLabels": [null, null, null, null, null, null, null],
+      "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+      "backgroundImage": "https://dw9to29mmj727.cloudfront.net/promo/2016/5256-SeriesHeaders_OPM_2000x800.jpg",
+      "datasets": [
+        {
+          "label": "Today",
+          "fill": "start",
+          "borderWidth": 1.5,
+          "backgroundColor": "rgba(0, 184, 216, 0.1)",
+          "borderColor": "rgb(0, 184, 216)",
+          "data": [2, 3, 3, 3, 4, 3, 3]
+        }
+      ]
+    },
+    {
+      "label": "Boku no Hero Academia",
+      "value": "8.9",
+      "percentage": "80%",
+      "increase": true,
+      "decrease": false,
+      "chartLabels": [null, null, null, null, null, null, null],
+      "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+      "backgroundImage": "https://freeaddon.com/wallpaper/bokunoheroacademia/thumb444x250-02.jpg",
+      "datasets": [
+        {
+          "label": "Today",
+          "fill": "start",
+          "borderWidth": 1.5,
+          "backgroundColor": "rgba(0, 184, 216, 0.1)",
+          "borderColor": "rgb(0, 184, 216)",
+          "data": [1, 2, 1, 3, 5, 4, 7]
+        }
+      ]
+    },
+    {
+      "label": "Naruto",
+      "value": "9.3",
+      "percentage": "70%",
+      "increase": true,
+      "decrease": false,
+      "chartLabels": [null, null, null, null, null, null, null],
+      "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+      "backgroundImage": "https://www.whats-on-netflix.com/wp-content/uploads/2018/09/naruto-on-netflix.jpg",
+      "datasets": [
+        {
+          "label": "Today",
+          "fill": "start",
+          "borderWidth": 1.5,
+          "backgroundColor": "rgba(0, 184, 216, 0.1)",
+          "borderColor": "rgb(0, 184, 216)",
+          "data": [1, 2, 3, 3, 3, 4, 4]
+        }
+      ]
+    },
+    {
+      "label": "Afro Samuri",
+      "value": "8.7",
+      "percentage": "50%",
+      "increase": false,
+      "decrease": true,
+      "chartLabels": [null, null, null, null, null, null, null],
+      "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+      "backgroundImage": "https://www.syfy.com/sites/syfy/files/styles/1200x680_hero/public/2019/03/afro_samurai_0.jpg",
+      "datasets": [
+        {
+          "label": "Today",
+          "fill": "start",
+          "borderWidth": 1.5,
+          "backgroundColor": "rgba(0, 184, 216, 0.1)",
+          "borderColor": "rgb(0, 184, 216)",
+          "data": [2, 3, 3, 3, 4, 3, 3]
+        }
+      ]
+    },
+    {
+      "label": "One Punch Man",
+      "value": "9.7",
+      "percentage": "60%",
+      "increase": false,
+      "decrease": true,
+      "chartLabels": [null, null, null, null, null, null, null],
+      "attrs": { "lg": "12" ,"md": "12", "sm": "12" },
+      "backgroundImage": "https://dw9to29mmj727.cloudfront.net/promo/2016/5256-SeriesHeaders_OPM_2000x800.jpg",
+      "datasets": [
+        {
+          "label": "Today",
+          "fill": "start",
+          "borderWidth": 1.5,
+          "backgroundColor": "rgba(0, 184, 216, 0.1)",
+          "borderColor": "rgb(0, 184, 216)",
+          "data": [2, 3, 3, 3, 4, 3, 3]
+        }
+      ]
+    }
+  ]
