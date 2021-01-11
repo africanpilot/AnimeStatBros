@@ -1,11 +1,13 @@
 /* eslint jsx-a11y/anchor-is-valid: 0 */
 
-import React, {useState } from "react";
+import React, {useState,useEffect} from "react";
 import ReactWordcloud from "react-wordcloud";
 import { Container, Row, Col, CardHeader,CardFooter,Card,CardBody} from "shards-react";
 import { MDBContainer } from "mdbreact";
 import "./../assets/trendlist.css";
 import PageTitle from "./../components/common/PageTitle";
+import { useSelector,useDispatch } from 'react-redux';
+import { getPosts } from './../actions/posts';
 
 //Charts
 import AnimeStatsTrendList from "./../components/common/AnimeStatsTrendList";
@@ -19,7 +21,6 @@ import TopAnimeTrendsTable from "./../components/blog/TopAnimeTrendsTable";
 import CommentsData from "./../data/comments.json";
 import words from "./../data/words";
 import AnimeDescriptionData from './../data/animeDescriptions.json'; 
-import AnimeSmallStatsdata from './../data/animeSmallStats.json';
 import rangeColordata from './../data/rangecolors.js'; 
 import piechartdata from './../data/pieChart.json';
 // import mapping from './../data/animeStatsDataList';
@@ -30,6 +31,8 @@ const piechartLabels = ["Watching", "Dropped","Completed", "On Hold", "Plan to w
 const AnimeStats = () => {
 
   const [labelID, setlabelID] = useState("");
+  const dispatch = useDispatch();
+  const posts = useSelector((state) => state.posts);
 
   function AnimeDescriptionDataID(){
     var index = AnimeDescriptionData.findIndex(function(item, i){
@@ -51,6 +54,10 @@ const AnimeStats = () => {
 
   var descriptionindexID= AnimeDescriptionDataID();
   var piechartindexID= piechartdataID();
+
+  useEffect(() => {
+    dispatch(getPosts());
+  }, []);
  
   return(
   <Container fluid className="main-content-container px-4">
@@ -69,10 +76,10 @@ const AnimeStats = () => {
         <MDBContainer>
           <div className="scrollbar scrollbar-primary mx-auto" style={scrollContainerStyle}>
             <Row>
-              {AnimeSmallStatsdata.map((stats, idx) => (
-                <Col className="col-lg" key={idx} {...stats.attrs}>
+              {posts.map((stats) => (
+                <Col className="col-lg" key={stats._id} {...stats.attrs}>
                   <AnimeStatsTrendList
-                    id={`small-stats-${idx}`}
+                    id={`small-stats-${stats._id}`}
                     variation="1"
                     chartData={stats.datasets}
                     chartLabels={stats.chartLabels}

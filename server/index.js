@@ -13,7 +13,7 @@ app.use(cors());
 
 app.use('/posts', postRoutes);
 
-const CONNECTION_URL = 'mongodb://localhost:27017';
+const CONNECTION_URL = 'mongodb://localhost:27017/AnimeStatBros';
 const PORT = process.env.PORT|| 27017;
 
 mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })

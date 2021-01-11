@@ -1,11 +1,17 @@
 import mongoose from 'mongoose';
 
 const postSchema = mongoose.Schema({
-    title: String,
-    message: String,
-    creator: String,
+    label: String,
+    value: String,
+    percentage: String,
+    increase: Boolean,
+    decrease: Boolean,
+    chartLables: Array,
+    attrs: Object,
+    backgroundImage: String,
+    datasets: Array,
 })
 
-var PostMessage = mongoose.model('PostMessage', postSchema);
+var PostMessage = mongoose.model('animesmallstats', postSchema);
 
 export default PostMessage;
