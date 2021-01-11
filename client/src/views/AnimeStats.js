@@ -20,7 +20,6 @@ import TopAnimeTrendsTable from "./../components/blog/TopAnimeTrendsTable";
 //data
 import CommentsData from "./../data/comments.json";
 import words from "./../data/words";
-import AnimeDescriptionData from './../data/animeDescriptions.json'; 
 import rangeColordata from './../data/rangecolors.js'; 
 import piechartdata from './../data/pieChart.json';
 // import mapping from './../data/animeStatsDataList';
@@ -35,8 +34,8 @@ const AnimeStats = () => {
   const posts = useSelector((state) => state.posts);
 
   function AnimeDescriptionDataID(){
-    var index = AnimeDescriptionData.findIndex(function(item, i){
-      return item.title === labelID
+    var index = posts.findIndex(function(item, i){
+      return item.label === labelID
     });
 
     if(index === -1){return 0}
@@ -44,8 +43,8 @@ const AnimeStats = () => {
   }
 
   function piechartdataID(){
-    var index = piechartdata.findIndex(function(item, i){
-      return item.title === labelID
+    var index = posts.findIndex(function(item, i){
+      return item.label === labelID
     });
 
     if(index === -1){return 0}
@@ -58,6 +57,11 @@ const AnimeStats = () => {
   useEffect(() => {
     dispatch(getPosts());
   }, []);
+
+  // var pieData = posts[piechartindexID];
+  // console.log(piechartindexID);
+  // console.log(posts);
+  // console.log(pieData);
  
   return(
   <Container fluid className="main-content-container px-4">
@@ -107,10 +111,7 @@ const AnimeStats = () => {
             <TimeSeriesChart/>
           </Col>
           <Col lg="4" md="12" sm="12" className="mb-4">
-            <AnimeDescription 
-              data={AnimeDescriptionData} 
-              id={descriptionindexID}
-            />
+            <AnimeDescription data={posts[descriptionindexID]}/>
           </Col>
         </Row>
         

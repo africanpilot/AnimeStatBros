@@ -1,2 +1,4 @@
 "c:\Program Files\MongoDB\Server\4.0\bin\mongoimport.exe" --host 127.0.0.1 --port 27017 --db AnimeStatBros --collection markers --file "F:\Projects\AnimeStatBros\client\src\data\markers.json" --jsonArray
 
+"c:\Program Files\MongoDB\Server\4.0\bin\mongoimport.exe" --host 127.0.0.1 --port 27017 --db AnimeStatBros --collection animestats --file "F:\Projects\AnimeStatBros\client\src\data\animeSmallStats.json" --jsonArray
+
