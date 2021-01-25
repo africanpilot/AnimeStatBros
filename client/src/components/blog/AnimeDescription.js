@@ -1,6 +1,6 @@
 /* eslint jsx-a11y/anchor-is-valid: 0 */
 import React from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import {Row, Col, Card, CardBody,} from "shards-react";
 
 const AnimeDescription = ({ data }) => (

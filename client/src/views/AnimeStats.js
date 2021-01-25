@@ -21,7 +21,6 @@ import TopAnimeTrendsTable from "./../components/blog/TopAnimeTrendsTable";
 import CommentsData from "./../data/comments.json";
 import words from "./../data/words";
 import rangeColordata from './../data/rangecolors.js'; 
-import piechartdata from './../data/pieChart.json';
 // import mapping from './../data/animeStatsDataList';
 
 const scrollContainerStyle = {maxHeight: "1443px", overflowX: "hidden"};
@@ -58,11 +57,8 @@ const AnimeStats = () => {
     dispatch(getPosts());
   }, []);
 
-  // var pieData = posts[piechartindexID];
-  // console.log(piechartindexID);
-  // console.log(posts);
-  // console.log(pieData);
- 
+  var pieData = posts[piechartindexID];
+
   return(
   <Container fluid className="main-content-container px-4">
     <Row noGutters className="page-header py-4">
@@ -122,19 +118,21 @@ const AnimeStats = () => {
                 <h3 className="m-0">{"Ratings Table"}</h3>
               </CardHeader>
               <CardBody style={{padding: "0px 10px 10px 10px"}} >
-                <TopAnimeTrendsTable/>
+                <TopAnimeTrendsTable tabdata={posts}/>
               </CardBody>
               <CardFooter className="border-top">
               </CardFooter>
             </Card>
           </Col>
           <Col lg="4" md="12" sm="12" className="mb-4">
-            <UsersByDevice 
-              title={"Categories Analysis - " +piechartdata[piechartindexID].title}
-              data={piechartdata[piechartindexID].data}
-              labels={piechartLabels}
-              backgroundColor={rangeColordata}
-            />
+            {(typeof pieData !=='undefined')? 
+                  <UsersByDevice 
+                    title={"Categories Analysis - " +pieData.label}
+                    data={pieData.pieChartdata}
+                    labels={piechartLabels}
+                    backgroundColor={rangeColordata}
+                  />:
+                  <div>{"No Data"}</div>  }
           </Col>
         </Row>
         

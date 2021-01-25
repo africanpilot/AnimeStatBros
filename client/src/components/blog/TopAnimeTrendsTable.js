@@ -49,28 +49,14 @@ const theme = createMuiTheme({
   },
 });
 
-export default function TopAnimeTrendsTable() {
+const TopAnimeTrendsTable = ({ tabdata}) => {
   const [state] = React.useState({
     columns: [
       { title: 'Tile', field: 'title',},
       { title: 'Rating', field: 'rating' },
       { title: '% Change', field: 'percentChange'},
       { title: 'Update', field: 'update'},
-    ],
-    data: [
-      { title: 'BOKU NO HERO ACADEMIA', rating: '8.9', percentChange: '80', update: '2020-12-17 21:22:00'},
-      { title: 'NARTUO', rating: '9.3', percentChange: '70', update: '2020-12-13 21:22:00'},
-      { title: 'AFRO SAMURI', rating: '8.7', percentChange: '50', update: '2020-12-11 21:22:00'},
-      { title: 'ONE PUNCH MAN', rating: '9.7', percentChange: '60', update: '2020-12-14 21:22:00'},
-      { title: 'BOKU NO HERO ACADEMIA', rating: '8.9', percentChange: '80', update: '2020-12-17 21:22:00'},
-      { title: 'NARTUO', rating: '9.3', percentChange: '70', update: '2020-12-13 21:22:00'},
-      { title: 'AFRO SAMURI', rating: '8.7', percentChange: '50', update: '2020-12-11 21:22:00'},
-      { title: 'ONE PUNCH MAN', rating: '9.7', percentChange: '60', update: '2020-12-14 21:22:00'},
-      { title: 'BOKU NO HERO ACADEMIA', rating: '8.9', percentChange: '80', update: '2020-12-17 21:22:00'},
-      { title: 'NARTUO', rating: '9.3', percentChange: '70', update: '2020-12-13 21:22:00'},
-      { title: 'AFRO SAMURI', rating: '8.7', percentChange: '50', update: '2020-12-11 21:22:00'},
-      { title: 'ONE PUNCH MAN', rating: '9.7', percentChange: '60', update: '2020-12-14 21:22:00'}, 
-    ],
+    ]
   });
 
   return (
@@ -79,18 +65,26 @@ export default function TopAnimeTrendsTable() {
         title=""
         icons={tableIcons}
         columns={state.columns}
-        data={state.data}
+        data={
+          tabdata.map((data) => ( { title: data.label, 
+          rating: data.rating, 
+          percentChange: data.percentage, 
+          update: data.date
+        }
+        ))}
         options={{
-                      fixedColumns: {
-                        left: 0,
-                        right: 0
-                      },
-                      tableLayout: 'auto',
-                      pageSize: 5,
-                      pageSizeOptions:[1,5,10,20],
-                      rowStyle: rowData => ({ backgroundColor: rowData.tableData.checked ? '#37b15933' : '' })
-                    }}
+                  fixedColumns: {
+                    left: 0,
+                    right: 0
+                  },
+                  tableLayout: 'auto',
+                  pageSize: 5,
+                  pageSizeOptions:[1,5,10,20],
+                  rowStyle: rowData => ({ backgroundColor: rowData.tableData.checked ? '#37b15933' : '' })
+                }}
       />
     </ThemeProvider>
   );
-}
+};
+
+export default TopAnimeTrendsTable;
