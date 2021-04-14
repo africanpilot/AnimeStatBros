@@ -1,6 +1,6 @@
 # anime-stat-bros
 
-## Project Descption
+## Project Description
 This project aims to create a statistics based web app for anime data. Project will be published online once I finish the database. 
 
 ## Preview
