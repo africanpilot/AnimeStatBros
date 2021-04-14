@@ -1,9 +1,15 @@
 # anime-stat-bros
 
 ## Project Descption
-This project aims to create a statistics based web app for anime data. Project will be published online once I finish the database. Below are pictures of what the site looks like so far.
+This project aims to create a statistics based web app for anime data. Project will be published online once I finish the database. 
+
+## Preview
 
 ![AnimeStatBros](AnimeStatBros1.JPG?raw=true 'output')
+![AnimeStatBros](AnimeStatBros2.JPG?raw=true 'output')
+![AnimeStatBros](AnimeStatBros3.JPG?raw=true 'output')
+![AnimeStatBros](AnimeStatBros4.JPG?raw=true 'output')
+![AnimeStatBros](AnimeStatBros5.JPG?raw=true 'output')
 
 ## To do list:
 - [X] get list of requirements
